@@ -59,7 +59,7 @@ class DecoderBlock(nn.Module):
 class TernausNetV2(nn.Module):
     """Variation of the UNet architecture with InplaceABN encoder."""
 
-    def __init__(self, num_classes=1, num_filters=32, is_deconv=False, num_input_channels=11, **kwargs):
+    def __init__(self, num_classes=1, num_filters=32, is_deconv=False, num_input_channels=3, **kwargs):
         """
 
         Args:
